@@ -1,19 +1,34 @@
 # Name : Anish Banswada
-# Time Taken : 
+# Time Taken : 50 mins
 
-# Problem Description : 
+# Problem Description : Given an array of integers, count the number of subarrays that sum to zero.
 
-# Anticipated Strategy :
+# Anticipated Strategy : Hashing
 
-# Assumptions -  
+# Assumptions - none
+
+# Time Complexity - O(n)
+
+# Space Complexity - unsure, O(n^2)?
 
 # Function 
-def zero(lst):
-    
+
+def zero(nums):
+    count = 0
+    sums = 0
+    d = dict()
+    d[0] = 1
+    for i in range(len(nums)):
+        sums += nums[i]
+        count += d.get(sums,0)
+        d[sums] = d.get(sums,0) + 1
+        
+    return(count)
 
 # Main
 
 if __name__ == "__main__":
-    print("Hello world")
+    arr = [4, 5, 2, -1, -3, -3, 4, 6, -7]
+    print("Expected 2 and got " + str(zero(arr)))
    
  
