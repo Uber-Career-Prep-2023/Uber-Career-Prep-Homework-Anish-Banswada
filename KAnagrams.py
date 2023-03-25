@@ -24,6 +24,11 @@ def KAnagrams(s1, s2, k):
         diff += abs(c1[letter] - c2.get(letter,0))
         if diff > k:
             return False
+    diff = 0
+    for letter in set(s2):
+        diff += abs(c2[letter] - c1.get(letter,0))
+        if diff > k:
+            return False
     return True
 
 # Main

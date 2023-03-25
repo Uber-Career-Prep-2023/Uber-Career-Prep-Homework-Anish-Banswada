@@ -9,7 +9,7 @@
 
 # Space Complexity - O(1)
 
-# Time Complexity - O(nlogn)
+# Time Complexity - O(logn)
 
 # Function 
 def MissingInteger(ar, size):

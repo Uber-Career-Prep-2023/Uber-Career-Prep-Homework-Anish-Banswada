@@ -5,7 +5,11 @@
 
 # Anticipated Strategy : fixed size sliding window
 
-# Assumptions -  Non-empty array, k > 0, 
+# Assumptions -  Non-empty array, k > 0
+
+# Time Complexity - O(n)
+
+# Space Complexity -  O(1)
 
 # Function 
 def MaxMeanSubArray(nums, k):

@@ -10,6 +10,10 @@ from collections import Counter
 
 # Assumptions -  s1 always contains s2, and size(s1) <= size(s2)
 
+# Time Complexity - O(n)
+
+# Space Complexity - O(n)
+
 # Function 
 def ShortestSubstring(s1, s2):
     target_letters = Counter(s2)

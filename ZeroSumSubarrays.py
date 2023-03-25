@@ -5,11 +5,11 @@
 
 # Anticipated Strategy : Hashing
 
-# Assumptions - none
+# Assumptions - 
 
 # Time Complexity - O(n)
 
-# Space Complexity - unsure, O(n^2)?
+# Space Complexity - O(n)
 
 # Function 
 
@@ -31,4 +31,5 @@ if __name__ == "__main__":
     arr = [4, 5, 2, -1, -3, -3, 4, 6, -7]
     print("Expected 2 and got " + str(zero(arr)))
    
+
  

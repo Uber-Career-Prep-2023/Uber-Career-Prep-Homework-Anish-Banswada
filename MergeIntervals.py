@@ -4,7 +4,7 @@
 # Problem Description : Given a list of integer pairs representing the 
 # low and high end of an interval, inclusive, return a list in which overlapping intervals are merged.
 
-# Anticipated Strategy -
+# Anticipated Strategy - Two pointers 
 
 # Assumptions -  Intervals in the input are in the form of list of lists
 

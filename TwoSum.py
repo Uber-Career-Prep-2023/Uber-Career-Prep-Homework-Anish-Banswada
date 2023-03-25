@@ -9,6 +9,10 @@
 
 # Assumptions -  Target can be positive or negative, 
 
+# Time Complexity - O(n)
+
+# Space Complexity - O(n)
+
 # Function 
 def twoSum(nums, target):
     vals = {}
