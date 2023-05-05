@@ -19,7 +19,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def floor_bst(root: TreeNode, target: int) -> int:
+def floor_bst(root, target):
     floor_val = float('-inf')
 
     while root:
