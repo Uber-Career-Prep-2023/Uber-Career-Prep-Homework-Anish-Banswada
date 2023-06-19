@@ -45,24 +45,43 @@ def dfs(target, graph):
             stack.extend(graph[cur_vertex])
     return False
 
+def topological_sort(graph):
+    in_degree = {}
+    for vertex in graph:
+        in_degree[vertex] = in_degree.get(vertex,0)
+        for edge in graph[vertex]:
+            in_degree[edge] = in_degree.get(edge,0) + 1
+    res = []
+    queue = deque()
+    for key in in_degree:
+        if in_degree[key] == 0:
+            queue.append(key)
+    while queue:
+        cur_vertex = queue.popleft()
+        res.append(cur_vertex)
+        for edge in graph[cur_vertex]:
+            in_degree[edge] -= 1
+            if in_degree[edge] == 0:
+                queue.append(edge)
+    return res
         
-        
-
 
 if __name__ == "__main__":
-    aj = buildAdjList([(1,2),(1,3),(2,3),(3,1), (1,0)])
-    print_graph(aj)
-    assert bfs(2,aj) == True
-    assert bfs(3,aj) == True
-    assert bfs(4,aj) == False
-    assert bfs(0,aj) == True
-    assert bfs(5,aj) == False
+    adj = buildAdjList([(1,2),(1,3),(2,3),(3,1), (1,0)])
+    assert bfs(2,adj) == True
+    assert bfs(3,adj) == True
+    assert bfs(4,adj) == False
+    assert bfs(0,adj) == True
+    assert bfs(5,adj) == False
 
-    assert dfs(2,aj) == True
-    assert dfs(3,aj) == True
-    assert dfs(4,aj) == False
-    assert dfs(0,aj) == True
-    assert dfs(5,aj) == False
+    assert dfs(2,adj) == True
+    assert dfs(3,adj) == True
+    assert dfs(4,adj) == False
+    assert dfs(0,adj) == True
+    assert dfs(5,adj) == False
+
+    new_adj = buildAdjList([(5, 2), (5, 0), (4, 0),(4, 1),(2, 3),(3, 1)])
+    assert topological_sort(new_adj) == [5, 4, 2, 0, 3, 1]
 
     print("Testing Complete")
 
