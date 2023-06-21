@@ -1,12 +1,12 @@
 # Name : Anish Banswada
 
-# Time Taken : 
+# Time Taken : 35 mins
 
-# Assumptions : 
+# Assumptions : None
 
-# Space Complexity :
+# Space Complexity : O(V+E)
 
-# Time Complexity :
+# Time Complexity :O(V+E)
 
 # Function 
 def vacationDestination(connections, origin, time):

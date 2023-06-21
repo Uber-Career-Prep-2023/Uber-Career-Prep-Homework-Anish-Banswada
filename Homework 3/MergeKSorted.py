@@ -1,8 +1,8 @@
 # Name : Anish Banswada
 
-# Time Taken : 
+# Time Taken : 20 mins
 
-# Assumptions : 
+# Assumptions : None
 
 # Space Complexity : O(k*n)
 

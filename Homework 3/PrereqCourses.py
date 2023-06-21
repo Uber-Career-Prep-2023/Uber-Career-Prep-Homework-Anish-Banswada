@@ -1,12 +1,12 @@
 # Name : Anish Banswada
 
-# Time Taken : 
+# Time Taken : 35 mins
 
-# Assumptions : 
+# Assumptions : No cycles
 
-# Space Complexity :
+# Space Complexity : O(V+E)
 
-# Time Complexity :
+# Time Complexity : O(V+E)
 
 from collections import  deque
 

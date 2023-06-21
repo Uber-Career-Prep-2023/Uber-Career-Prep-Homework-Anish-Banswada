@@ -2,11 +2,11 @@
 
 # Time Taken : 15 minutes
 
-# Assumptions : 
+# Assumptions : None
 
-# Space Complexity :
+# Space Complexity : O(1)
 
-# Time Complexity :
+# Time Complexity : O(n)
 
 # Function 
 def reverse(sentence):
